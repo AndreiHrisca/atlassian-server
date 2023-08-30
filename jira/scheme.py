@@ -1,6 +1,7 @@
 
+import requests
 from jira.jira import Jira
 
 
-class Project(Jira):
+class Scheme(Jira):
   pass

@@ -2,5 +2,5 @@
 from jira.jira import Jira
 
 
-class Project(Jira):
+class Filter(Jira):
   pass

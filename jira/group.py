@@ -1,9 +1,6 @@
 
-class Group:
-  name = ""
+from jira.jira import Jira
 
-  def __init__(self) -> None:
-    pass
 
-  def create_group():
-    pass
+class Group(Jira):
+  pass

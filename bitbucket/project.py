@@ -1,11 +1,6 @@
 
-class Project:
-  name = ""
-  acronym = ""
-  description = ""
+from bitbucket.bitbucket import Bitbucket
 
-  def __init__(self) -> None:
-    pass
 
-  def create_project():
+class Project(Bitbucket):
     pass

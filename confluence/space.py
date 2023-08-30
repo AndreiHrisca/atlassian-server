@@ -1,14 +1,6 @@
 
-class Space:
-  name = ""
-  acronym = ""
-  description = ""
+from confluence.confluence import Confluence
 
-  def __init__(self) -> None:
-    pass
 
-  def create_space():
-    pass
-
-  def delete_space():
-    pass
+class Space(Confluence):
+  pass
