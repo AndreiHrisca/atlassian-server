@@ -1,3 +1,10 @@
+import os
+from dotenv import load_dotenv
 
 class Bitbucket:
-    pass
+    BASE_URL = "https://api.bitbucket.org/2.0"
+    HEADERS = { "Content-Type": "application/json" }
+
+    def __init__(self):
+        load_dotenv()
+        self.HEADERS["Authorization"] = f"Bearer {os.getenv('TOKEN_BITBUKET')}"
