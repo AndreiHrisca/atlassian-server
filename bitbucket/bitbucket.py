@@ -2,7 +2,7 @@ import os
 from dotenv import load_dotenv
 
 class Bitbucket:
-    BASE_URL = "https://api.bitbucket.org/2.0"
+    BASE_URL = "https://AndreiHri@bitbucket.org"
     HEADERS = { "Content-Type": "application/json" }
 
     def __init__(self):
