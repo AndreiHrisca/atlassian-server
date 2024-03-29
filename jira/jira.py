@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 
 
 class Jira():
-    BASE_URL = "https://api.jira.org/2.0"
+    BASE_URL = "http://localhost:8080"
     HEADERS = { "Content-Type": "application/json" }
 
     def __init__(self):
