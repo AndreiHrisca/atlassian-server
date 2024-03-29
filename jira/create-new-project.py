@@ -4,6 +4,11 @@ from Jira import Jira
 from Project import Project
 from Group import Group
 
+users_admins = []
+users_engineers = []
+users_technicals = []
+new_groups_for_project = []
+
 def get_project(project_key):
   """
   Get a project by its key
@@ -59,6 +64,7 @@ def get_user(user_name):
 # CREATE A NEW PROJECT LOGIC.
 
 jira = Jira()
+new_project = Project()
 print(get_user('andrei'))
 
 
@@ -66,3 +72,5 @@ print(get_user('andrei'))
 # CHECK IF THE GROUP EXISTS OR NOT.
 # CHECK IF THE USER EXISTS OR NOT.
 # CHECK IF THE CATEGORY EXISTS OR NOT.
+for category in get_all_project_categories():
+  print(category)
