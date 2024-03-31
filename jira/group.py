@@ -8,6 +8,19 @@ class Group(Jira):
   def __init__(self, group_name: str):
     self.group_name = group_name
 
+  def get_group(self):
+    """
+    Get a group by name
+    :param group_name: str
+    :return: object
+    """
+    url = f"{self.BASE_URL}/rest/api/2/group?groupname={self.group_name}"
+    try:
+      response = requests.get(url, headers=self.HEADERS)
+      return response.json()
+    except requests.RequestException as e:
+      raise f'Error getting group {self.group_name}: {e}'
+
   def create_group(self):
     """
     Create a new group
