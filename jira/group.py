@@ -5,6 +5,9 @@ from Jira import Jira
 class Group(Jira):
   group_name: str
 
+  def __init__(self, group_name: str):
+    self.group_name = group_name
+
   def create_group(self):
     """
     Create a new group

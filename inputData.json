@@ -1,0 +1,14 @@
+{
+  "Jira": {
+    "Key": "Project2",
+    "Name": "Project 2",
+    "Description": "Project 2 Description",
+    "project-lead-key": "andrei",
+    "project-admins-keys": [],
+    "project-engineers-keys": ["andrei"],
+    "project-technicals-keys": ["andrei"]
+  },
+  "Confluence": {},
+  "Bitbucket": {},
+  "Bamboo": {}
+}
