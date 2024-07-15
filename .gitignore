@@ -5,3 +5,4 @@ __pycache__/
 # Ignore Python virtual environment
 venv/
 .env
+todo

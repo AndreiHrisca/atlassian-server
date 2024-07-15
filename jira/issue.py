@@ -1,5 +1,5 @@
 
-from jira.jira import Jira
+from Jira import Jira
 
 
 class Issue(Jira):
